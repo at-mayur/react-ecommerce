@@ -1,0 +1,184 @@
+.itemContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px 5px 10px 5px;
+    border-radius: 10px;
+}
+
+.itemImgContainer{
+    width: 20%;
+}
+
+.itemImgContainer img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.itemDescContainer{
+    width: 78%;
+    margin: 0 10px;
+}
+
+.itemDescContainer input:focus{
+    border: none;
+    box-shadow: 0 0 5px 1px rgb(1, 174, 193);
+}
+
+.itemDescContainer h1 input{
+    font-size: 30px;
+    width: 90%;
+    outline: none;
+    border: 3px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.itemDescContainer h1{
+    margin-top: 10px;
+}
+
+.itemPriceRating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+}
+
+.itemPriceRating input{
+    font-size: 20px;
+    width: 60% !important;
+    outline: none;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.itemPriceRating p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.itemPrice{
+    font-size: 20px;
+    width: 50%;
+}
+
+.itemPrice input{
+    margin-left: 0.5em;
+}
+
+.itemPrice span{
+    margin: 0 5px;
+}
+
+.itemRating{
+    font-size: 20px;
+    width: 50%;
+    text-align: end;
+}
+
+.itemRatingStar{
+    font-size: 25px;
+    color: rgb(255, 174, 0);
+    margin-right: 10px;
+}
+
+.itemDesc{
+    text-align: justify;
+}
+
+.itemDesc textarea{
+    width: 90%;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.itemDesc textarea::-webkit-scrollbar{
+    display: none;
+}
+
+.itemDesc textarea:focus{
+    border: none;
+    box-shadow: 0 0 5px 1px rgb(1, 174, 193);
+}
+
+.itemEditDelete{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.itemEditDelete img{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    transition: all 0.3s;
+}
+
+.itemEditDelete img:hover{
+    transform: scale(1.05);
+}
+
+.itemEditDelete button{
+    color: white;
+    font-size: 18px;
+    padding: 8px 10px;
+    border: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.cancelBtn{
+    background-color: rgb(229, 2, 2);
+}
+
+.cancelBtn:hover{
+    background-color: rgb(184, 1, 1);
+}
+
+.saveBtn{
+    background-color: rgb(0, 112, 0);
+}
+
+.saveBtn:hover{
+    background-color: rgb(1, 74, 1);
+}
+
+@media screen and (max-width: 800px) {
+    
+    .itemImgContainer{
+        width: 30%;
+    }
+
+    .itemDescContainer{
+        width: 67%;
+    }
+
+    .itemPriceRating input{
+        width: 40% !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .itemImgContainer{
+        width: 40%;
+    }
+
+    .itemDescContainer{
+        width: 57%;
+    }
+
+}

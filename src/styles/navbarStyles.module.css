@@ -1,0 +1,144 @@
+
+.nav{
+    width: 100%;
+    background-color: rgb(1, 1, 103);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand{
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+    font-family: cursive;
+    font-size: 30px;
+    padding: 0.2em;
+}
+
+.btn{
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1em;
+    display: none;
+}
+
+.btn:focus{
+    border: 2px solid black;
+    box-shadow: 0 0 4px 1px white;
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+
+.navElements{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.expand{
+    display: flex !important;
+}
+
+.navList{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rightAlign{
+    margin-left: auto;
+}
+
+.navItem{
+    height: 60px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 0.4em;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem:hover{
+    border-bottom: 5px solid rgb(255, 106, 0);
+}
+
+.cart{
+    position: relative;
+}
+
+.cartCount{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 1;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(255, 166, 0);
+    border-radius: 50px;
+}
+
+.cartTitle{
+    margin: 0 15px;
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    
+    .navElements{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .btn{
+        display: block;
+    }
+    
+    .navElements{
+        width: 100%;
+        display: none;
+    }
+
+    .navList{
+        width: 100%;
+    }
+
+    .navItem{
+        width: 100%;
+        justify-content: start;
+    }
+
+    .navItem:hover{
+        border-bottom: 3px solid rgb(255, 106, 0);
+    }
+
+    .rightAlign{
+        margin: 0;
+        flex-wrap: wrap-reverse;
+    }
+
+    .cartTitle{
+        display: inline-block;
+    }
+
+}

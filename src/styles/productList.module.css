@@ -1,0 +1,34 @@
+.productListContainer{
+    width: 96%;
+    height: 90%;
+    margin: auto;
+}
+
+.productListSort{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.productListSort p{
+    display: inline-block;
+    margin-left: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.productListSort p span{
+    margin-left: 5px;
+    color: grey;
+}
+
+.productList{
+    width: 100%;
+    height: 88%;
+    overflow: scroll;
+}
+
+.productList::-webkit-scrollbar{
+    display: none;
+}
