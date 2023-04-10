@@ -67,6 +67,7 @@ function ProductItem(){
                                 <button type="button" className={styles.saveBtn}>Save</button>
                             </>) :
                             (<>
+                                <button type="button" className={styles.addCartBtn}>Add To Cart</button>
                                 <img src="https://cdn-icons-png.flaticon.com/512/2280/2280532.png" alt="Edit" onClick={ handleEdit } />
                                 <img src="https://cdn-icons-png.flaticon.com/512/6460/6460112.png" alt="Delete" />
                             </>)
