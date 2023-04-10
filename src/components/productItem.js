@@ -35,7 +35,7 @@ function ProductItem(){
                         }
                     </p>
                     <p className={styles.itemRating}>
-                        <span className={styles.itemRatingStar}><i class="fa-solid fa-star"></i></span>
+                        <span className={styles.itemRatingStar}><i className="fa-solid fa-star"></i></span>
                         { edit ? 
                             (<input type="number" id="item-rating" value={4} />) :
                             (<span>4</span>)

@@ -1,0 +1,86 @@
+.ProductDetailsContainer{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px 5px 10px 5px;
+    border-radius: 10px;
+}
+
+.productBasicDetails{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemImgContainer{
+    width: 60%;
+}
+
+.itemImgContainer img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.itemDescContainer{
+    width: 35%;
+    margin: 0 10px;
+}
+
+.itemPrice{
+    font-size: 20px;
+}
+
+.itemPrice span{
+    margin: 0 5px;
+}
+
+.itemRating{
+    font-size: 20px;
+}
+
+.itemRatingStar{
+    font-size: 25px;
+    color: rgb(255, 174, 0);
+    margin-right: 10px;
+}
+
+.itemDesc{
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+}
+
+.itemDesc p{
+    font-size: 18px;
+}
+
+.itemAddToCart button{
+    color: white;
+    font-size: 18px;
+    padding: 8px 10px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.4s;
+    background-color: rgb(255, 119, 0);
+}
+
+.addCartBtn:hover{
+    background-color: rgb(215, 101, 2);
+}
+
+@media screen and (max-width: 800px) {
+    
+    .itemImgContainer{
+        width: 100%;
+    }
+
+    .itemDesc{
+        width: 80%;
+        margin: 10px;
+    }
+
+}

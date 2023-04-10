@@ -16,7 +16,7 @@ function Navbar(){
             </a>
 
             <button type="button" className={styles.btn} onClick={ handleExpandNav }>
-                <i class="fa-solid fa-bars"></i>
+                <i className="fa-solid fa-bars"></i>
             </button>
 
             <div id="navbar-elements" className={styles.navElements}>
@@ -33,7 +33,7 @@ function Navbar(){
                 <div className={styles.navList+" "+styles.rightAlign}>
                     <a href="/products" className={styles.navItem}>
                         <div className={styles.cart}>
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i className="fa-solid fa-cart-shopping"></i>
                             <p className={styles.cartCount}>2</p>
                         </div>
                         <span className={styles.cartTitle}>Cart</span>
