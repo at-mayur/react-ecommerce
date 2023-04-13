@@ -2,6 +2,38 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Folder Structure
+
+1. /src/actions/
+
+    * Contains action creators and action types for cart and products.
+
+2. /src/components/
+    
+    * Contains 8 components namely AddProduct, Cart, CartItem, Loader, Navbar, ProductDetails, ProductItem, ProductList.
+    
+3. /src/config/
+
+    * Contains fetchApi.js which will call GET, POST, PUT, DELETE request to API to list, create, update, delete products respectively.
+    
+4. /src/images/
+
+    * Contains loading image gif for loader.
+    * Contains box image for product if image is not available for product.
+    
+5. /src/reducers/
+
+    * Contains 3 files namely cartReducer, productsReducer, rootReducer.
+    * cartReducer handles all the actions related with Cart.
+    * productsReducer handles all the actions related with products.
+    * rootReducer combines this 2 reducers and create single reducer.
+    
+6. /src/styles/
+
+    * Contains styles for components.
+    
+
+
 ## Available Scripts
 
 In the project directory, you can run:
