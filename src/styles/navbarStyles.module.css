@@ -1,4 +1,7 @@
+/* Styles for navbar */
 
+
+/* managing navbar color, width */
 .nav{
     width: 100%;
     background-color: rgb(1, 1, 103);
@@ -8,6 +11,8 @@
     flex-wrap: wrap;
 }
 
+
+/* brandname styles */
 .brand{
     height: 60px;
     box-sizing: border-box;
@@ -16,9 +21,12 @@
     color: rgb(255, 153, 0);
     font-family: cursive;
     font-size: 30px;
+    font-weight: bolder;
     padding: 0.2em;
 }
 
+
+/* btn styles. which expands or collapses navbar on smaller screen */
 .btn{
     background: transparent;
     color: white;
@@ -34,12 +42,16 @@
     box-shadow: 0 0 4px 1px white;
 }
 
+
+/* set images height width */
 .img{
     width: 30px;
     height: 30px;
     margin: 0 10px 0 0;
 }
 
+
+/* conatiner for all nav items */
 .navElements{
     display: flex;
     align-items: center;
@@ -47,20 +59,26 @@
     width: 80%;
 }
 
+
+/* styles which display nav after clicking btn on smaller screen */
 .expand{
     display: flex !important;
 }
 
+/* left aligned items */
 .navList{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
+/* right aligned items */
 .rightAlign{
     margin-left: auto;
 }
 
+
+/* individual nav element styles */
 .navItem{
     height: 60px;
     box-sizing: border-box;
@@ -74,10 +92,13 @@
     align-items: center;
 }
 
+/* hover effect of nav item */
 .navItem:hover{
     border-bottom: 5px solid rgb(255, 106, 0);
 }
 
+
+/* styles to display cart icon count above it */
 .cart{
     position: relative;
 }
@@ -100,6 +121,9 @@
     display: none;
 }
 
+
+
+/* media queries to adjust app for smaller screen sizes */
 @media screen and (max-width: 950px) {
     
     .navElements{

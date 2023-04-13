@@ -1,3 +1,7 @@
+/* styles for product details page */
+
+
+/* main container styles */
 .ProductDetailsContainer{
     width: 98%;
     display: flex;
@@ -14,6 +18,8 @@
     flex-wrap: wrap;
 }
 
+
+/* Product image styles */
 .itemImgContainer{
     width: 60%;
 }
@@ -24,6 +30,8 @@
     border-radius: 10px;
 }
 
+
+/* item basic details styles */
 .itemDescContainer{
     width: 35%;
     margin: 0 10px;

@@ -1,3 +1,6 @@
+/* cart item styles */
+
+/* main container styles */
 .cartItemContainer{
     width: 100%;
     display: flex;
@@ -9,6 +12,8 @@
     border-radius: 10px;
 }
 
+
+/* product image styles */
 .itemImgContainer{
     width: 20%;
 }
@@ -19,6 +24,8 @@
     border-radius: 10px;
 }
 
+
+/* product description styles */
 .itemDescContainer{
     width: 78%;
     margin: 0 10px;
@@ -34,6 +41,7 @@
     font-size: 30px;
 }
 
+/* + - icon images styles */
 .itemQty img{
     width: 30px;
     height: 30px;
@@ -56,6 +64,8 @@
     padding-right: 30px;
 }
 
+
+/* remove btn styles */
 .itemRemove button{
     color: white;
     font-size: 18px;
@@ -75,6 +85,8 @@
 }
 
 
+
+/* media queries for adjusting app to smaller screen sizes */
 @media screen and (max-width: 800px) {
     
     .itemImgContainer{

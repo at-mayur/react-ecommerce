@@ -1,3 +1,5 @@
+
+/* Aligning main conatiner */
 .addProductContainer{
     width: 90%;
     height: 90%;
@@ -12,6 +14,7 @@
     margin-left: 15%;
 }
 
+/* Form styles */
 .addProductForm{
     width: 90%;
     height: 85%;
@@ -22,6 +25,8 @@
     align-items: center;
 }
 
+
+/* styling input elements and there hover effects */
 .addProductForm input:focus{
     border: none;
     box-shadow: 0 0 5px 1px rgb(1, 174, 193);
@@ -46,6 +51,7 @@
     border-radius: 10px;
 }
 
+/* hiding scrollbar of textarea */
 .addProductForm textarea::-webkit-scrollbar{
     display: none;
 }
@@ -55,6 +61,8 @@
     box-shadow: 0 0 5px 1px rgb(1, 174, 193);
 }
 
+
+/* btn styles */
 .addProductForm button{
     color: white;
     font-size: 18px;

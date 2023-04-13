@@ -1,7 +1,7 @@
 
 import load from "../images/loading.gif";
 
-// Loader component. Display when api is fetching todos.
+// Loader component. Display when api is fetching products list.
 function Loader(){
     return (
         <div>
