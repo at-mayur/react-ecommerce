@@ -1,6 +1,27 @@
-import styles from "../styles/navbarStyles.module.css";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-function Navbar(){
+import styles from "../styles/navbarStyles.module.css";
+import { fetchCartProducts } from "../actions/cartActions";
+
+
+function Navbar(props){
+
+    const [cartItemCount, setCartItemCount] = useState(props.store.getState().cart.cartProductList.length);
+
+    useEffect(() => {
+
+        const store = props.store;
+
+        store.subscribe(() => {
+            // console.log("subscribe called", store.getState());
+            setCartItemCount(store.getState().cart.cartProductList.length);
+        });
+
+        store.dispatch(fetchCartProducts());
+
+    }, []);
+
 
     function handleExpandNav(){
 
@@ -11,9 +32,9 @@ function Navbar(){
     return (
         <div className={styles.nav}>
 
-            <a href="/products" className={styles.brand}>
+            <Link to="/" className={styles.brand}>
                 E-Commerce
-            </a>
+            </Link>
 
             <button type="button" className={styles.btn} onClick={ handleExpandNav }>
                 <i className="fa-solid fa-bars"></i>
@@ -22,22 +43,22 @@ function Navbar(){
             <div id="navbar-elements" className={styles.navElements}>
 
                 <div className={styles.navList}>
-                    <a href="/products" className={styles.navItem}>
+                    <Link to="/" className={styles.navItem}>
                         Products
-                    </a>
-                    <a href="/products" className={styles.navItem}>
+                    </Link>
+                    <Link to="/add-product" className={styles.navItem}>
                         Add Product
-                    </a>
+                    </Link>
                 </div>
 
                 <div className={styles.navList+" "+styles.rightAlign}>
-                    <a href="/products" className={styles.navItem}>
+                    <Link to="/cart" className={styles.navItem}>
                         <div className={styles.cart}>
                             <i className="fa-solid fa-cart-shopping"></i>
-                            <p className={styles.cartCount}>2</p>
+                            <p className={styles.cartCount}>{ cartItemCount }</p>
                         </div>
                         <span className={styles.cartTitle}>Cart</span>
-                    </a>
+                    </Link>
                     <p className={styles.navItem}>
                         <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="User" className={styles.img} />
                         <span>Mayur</span>

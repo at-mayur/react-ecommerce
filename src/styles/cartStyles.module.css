@@ -27,6 +27,10 @@
     margin: 10px 40px;
 }
 
+.cartTotal span{
+    margin: 0 5px;
+}
+
 .cartTotal button{
     color: white;
     font-size: 18px;
