@@ -32,7 +32,7 @@ root.render(
   <React.StrictMode>
 
     {/* Wrapping whole app component within BrowserRouter */}
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
 
       {/* Wrapping whole app component within NotificationProvider to display notification */}
       <NotificationProvider 
